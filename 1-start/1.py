@@ -1,4 +1,3 @@
-import numpy as np
 import cv2 as cv
 import matplotlib.pyplot as plt
 
@@ -21,7 +20,7 @@ cv.imwrite('rma_gray.jpg', img)
 
 """
 
-plt.imshow(img, cmap='gray', interpolation='bicubic')
+# plt.imshow(img, cmap='gray', interpolation='bicubic')
 plt.imshow(img_c, interpolation='bicubic')
 plt.xticks([])
 plt.yticks([])
