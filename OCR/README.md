@@ -9,4 +9,4 @@
 
  3. Set the tesseract path in the script before using :
 
-    act.tesseract_cmd=r'C:\Program Files\Tesseract-OCR\tesseract.exe' (Base on default installation path)
+    pytesseract.pytesseract.tesseract_cmd=r'C:\Program Files\Tesseract-OCR\tesseract.exe' (Base on default installation path)
