@@ -14,6 +14,7 @@ video = cv2.VideoCapture('street_camera.mp4')
 fps = video.get(cv2.CAP_PROP_FPS)
 print(fps)
 
+
 while True:
     _, frame1 = video.read()
     _, frame2 = video.read()
@@ -21,10 +22,10 @@ while True:
     # Process Video :
 
     # 2 frame for moving detection :
-
     resize_frame1 = rescale_frame(frame1)
     resize_frame2 = rescale_frame(frame2)
 
+    # show diferrence in frames
     frame_diff = cv2.absdiff(resize_frame1, resize_frame2)
     frame_diff_gr = cv2.cvtColor(frame_diff, cv2.COLOR_BGR2GRAY)
 
